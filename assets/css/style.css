@@ -1,0 +1,374 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.imagen {
+  background-image: linear-gradient(black, rgba(179, 179, 33, 0.959));
+  min-width: 100vh; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  min-width: 100vh; }
+
+video {
+  display: flex;
+  margin-left: 100px;
+  padding-bottom: 100px; }
+
+.registrarse label {
+  margin-left: 10px; }
+
+.registrarse input {
+  margin-left: 10px;
+  padding: 10px;
+  margin-top: 5px; }
+
+.registrarse {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 5px;
+  align-items: baseline;
+  color: white; }
+
+.paginas {
+  text-align: center;
+  font-size: x-large;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 100vh; }
+
+.paginas :hover {
+  color: rgba(194, 194, 152, 0.959);
+  background-image: linear-gradient(black, rgba(179, 179, 33, 0.959));
+  transform: scale(1.2);
+  padding: 0.4rem 0.5rem;
+  border-radius: 6rem;
+  transition: 250ms ease-in-out; }
+
+.header {
+  text-align: center;
+  font-size: x-large;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 15px 0;
+  margin-top: 10px;
+  min-width: 100vh; }
+
+.headermenu a {
+  text-decoration: none;
+  color: #fbff00; }
+
+.paginas {
+  background-color: black;
+  border: 30px;
+  padding: 15px;
+  text-anchor: middle;
+  font-size: 100%;
+  color: black;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 100vh; }
+
+body {
+  background-image: url(../img/istockphoto-1193489678-2048x2048.jpg); }
+
+.footer__principal {
+  background-color: black;
+  border: 30px;
+  padding: 15px;
+  text-anchor: middle;
+  font-size: 100%;
+  color: #fbff00;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 100vh; }
+
+.empanada {
+  display: flex;
+  margin-top: 100px;
+  border-radius: 10px;
+  color: #fbff00;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  min-width: 100vh; }
+
+.estofado {
+  display: flex;
+  margin-top: 100px;
+  border-radius: 10px;
+  color: #fbff00;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  min-width: 100vh; }
+
+.hamburguesas {
+  display: flex;
+  margin-top: 100px;
+  border-radius: 10px;
+  color: #fbff00;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  min-width: 100vh; }
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 800px 800px;
+  grid-template-rows: 1fr 1fr;
+  min-width: 50vh; }
+
+.Pizza {
+  display: flex;
+  margin-top: 100px;
+  border-radius: 10px;
+  color: #fbff00;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  min-width: 40vh;
+  width: 700px;
+  height: 250px; }
+
+.sandwich {
+  display: flex;
+  margin-top: 100px;
+  border-radius: 10px;
+  color: #fbff00;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  min-width: 100vh; }
+
+.evaluador {
+  display: flex;
+  margin-top: 65px;
+  margin-bottom: 65px;
+  margin-left: 50px;
+  border-radius: 10px;
+  color: #fbff00;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  padding: 10px;
+  min-width: 75vh; }
+
+.Cheff {
+  display: flex;
+  margin-top: 100px;
+  border-radius: 10px;
+  color: #fbff00;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  min-width: 75vh; }
+
+.catalogo__derecha {
+  display: flex;
+  align-items: baseline;
+  min-width: 75vh; }
+
+.cheff__principal {
+  display: flex;
+  margin-top: 90px;
+  margin-bottom: 85px;
+  margin-left: 50px;
+  border-radius: 10px;
+  color: #fbff00;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  min-width: 75vh;
+  padding: 10px; }
+
+.ubicacion {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+  min-width: 75vh; }
+
+.menu-principal {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 100px;
+  min-width: 75vh; }
+
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+
+@media (max-width: 1500px) and (min-width: 1300px) {
+  body {
+    background-size: auto; }
+  .contenedor {
+    display: grid;
+    grid-template-columns: 800px 800px;
+    grid-template-rows: 1fr 1fr;
+    min-height: 50vh; }
+  .Pizza {
+    display: flex;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: #fbff00;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: black;
+    min-width: 40vh;
+    width: 500px;
+    height: 150px;
+    font-size: small; }
+  .cheff__principal {
+    display: flex;
+    margin-top: 90px;
+    margin-bottom: 85px;
+    border-radius: 10px;
+    color: #fbff00;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: black;
+    width: 500px;
+    padding: 10px;
+    min-width: 50vh; }
+  .ubicacion {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 500px; }
+  .menu-principal {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 500px; }
+  .evaluador {
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    color: #fbff00;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: black;
+    width: 550px;
+    padding: 10px;
+    min-width: 50vh;
+    height: 400px; } }
+
+@media (max-width: 1300px) and (min-width: 1000px) {
+  body {
+    background-size: auto; }
+  .contenedor {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 1fr 1fr;
+    min-height: 50vh; }
+  .Pizza {
+    display: flex;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: #fbff00;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: black;
+    min-width: 40vh;
+    width: 450px;
+    height: 150px;
+    font-size: 15px; } }
+
+@media (max-width: 1000px) and (min-width: 300px) {
+  body {
+    background-size: auto; }
+  .contenedor {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 1fr;
+    min-height: 50vh; }
+  .Pizza {
+    display: flex;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: #fbff00;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: black;
+    min-width: 100vh;
+    width: 500px;
+    height: 150px;
+    font-size: 15px;
+    margin-left: 15px; } }
+
+@media (max-width: 1500px) and (min-width: 1200px) {
+  .cheff__principal {
+    display: flex;
+    margin-top: 90px;
+    margin-bottom: 85px;
+    border-radius: 10px;
+    color: #fbff00;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: black;
+    width: 500px;
+    padding: 10px;
+    min-width: 50vh; }
+  .ubicacion {
+    display: grid;
+    align-items: center;
+    justify-content: center; }
+  .menu-principal {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 500px; }
+  .evaluador {
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    color: #fbff00;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: black;
+    width: 550px;
+    padding: 10px;
+    min-width: 50vh;
+    height: 400px; } }
+
+@media (max-width: 1200px) and (min-width: 400px) {
+  .contenedor-principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; }
+  .cheff__principal {
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+    margin-bottom: 85px;
+    margin-left: 50px;
+    border-radius: 10px;
+    color: #fbff00;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: black;
+    width: 700px;
+    padding: 10px;
+    min-width: 50vh; }
+  .ubicacion {
+    display: grid;
+    align-items: center;
+    justify-content: center; }
+  .menu-principal {
+    display: grid;
+    align-items: center;
+    justify-content: center; }
+  .evaluador {
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    color: #fbff00;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: black;
+    width: 700px;
+    padding: 10px;
+    min-width: 50vh;
+    margin-left: 50px; }
+  body {
+    background-size: auto; } }
