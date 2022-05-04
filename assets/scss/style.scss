@@ -1,10 +1,14 @@
+@import "variables";
+
+@mixin sizes($w, $h){
+  height: $h;
+  width: $w;
+}
+
 * {
   margin: 0px;
   padding: 0px;
 }
-
-$color-background: linear-gradient(black, rgba(179, 179, 33, 0.959)) ;
-$color-letras-menu: rgb(251, 255, 0); 
 
 .imagen {
   background-image: $color-background;
@@ -31,7 +35,7 @@ video {
 
 .registrarse input {
   margin-left: 10px;
-  padding: 10px;
+  padding: map-get($map: $estilos, $key: relleno);
   margin-top: 5px;
 }
 
@@ -46,7 +50,7 @@ video {
 }
 
 .paginas {
-  text-align: center;
+  text-align: map-get($map: $estilos, $key: alineacion);
   font-size: x-large;
   text-decoration: none;
   display: inline-block;
@@ -62,11 +66,11 @@ video {
 }
 
 .header {
-  text-align: center;
+  text-align: map-get($map: $estilos, $key: alineacion);
   font-size: x-large;
   text-decoration: none;
   border-radius: 12px;
-  padding: 15px 0;
+  padding: map-get($map: $estilos, $key: relleno);
   margin-top: 10px;
   min-width: 100vh;
 }
@@ -79,13 +83,13 @@ video {
 .paginas {
   background-color: rgb(0, 0, 0);
   border: 30px;
-  padding: 15px;
+  padding: map-get($map: $estilos, $key: relleno);
   text-anchor: middle;
   font-size: 100%;
   color: black;
   text-decoration: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
+  text-align: map-get($map: $estilos, $key: alineacion);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -99,13 +103,13 @@ body {
 .footer__principal {
   background-color: black;
   border: 30px;
-  padding: 15px;
+  padding: map-get($map: $estilos, $key: relleno);
   text-anchor: middle;
   font-size: 100%;
   color: $color-letras-menu;
   text-decoration: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
+  text-align: map-get($map: $estilos, $key: alineacion);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -149,7 +153,13 @@ body {
   min-width: 50vh;
 }
 
+@mixin sizes($w, $h){
+  height: $h;
+  width: $w;
+}
+
 .Pizza {
+  @include sizes(700px, 250px);
   display: flex;
   margin-top: 100px;
   border-radius: 10px;
@@ -157,8 +167,6 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: black;
   min-width: 40vh;
-  width: 700px;
-  height: 250px;
 }
 
 .sandwich {
@@ -180,7 +188,7 @@ body {
   color: $color-letras-menu;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: black;
-  padding: 10px;
+  padding: map-get($map: $estilos, $key: relleno);
   min-width: 75vh;
 }
 
@@ -210,7 +218,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: black;
   min-width: 75vh;
-  padding: 10px;
+  padding: map-get($map: $estilos, $key: relleno);
 }
 
 .ubicacion {
@@ -244,7 +252,12 @@ body {
     min-height: 50vh;
   }
 
+  @mixin sizes($w, $h){
+    height: $h;
+    width: $w;
+  }
   .Pizza {
+    @include sizes(500px,150px );
     display: flex;
     margin-top: 100px;
     border-radius: 10px;
@@ -252,8 +265,6 @@ body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-color: black;
     min-width: 40vh;
-    width: 500px;
-    height: 150px;
     font-size: small;
   }
 
@@ -266,7 +277,7 @@ body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-color: black;
     width: 500px;
-    padding: 10px;
+    padding: map-get($map: $estilos, $key: relleno);
     min-width: 50vh;
   }
 
@@ -293,7 +304,7 @@ body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-color: black;
     width: 550px;
-    padding: 10px;
+    padding: map-get($map: $estilos, $key: relleno);
     min-width: 50vh;
     height: 400px;
   }
@@ -362,7 +373,7 @@ body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-color: black;
     width: 500px;
-    padding: 10px;
+    padding: map-get($map: $estilos, $key: relleno);
     min-width: 50vh;
   }
 
@@ -388,7 +399,7 @@ body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-color: black;
     width: 550px;
-    padding: 10px;
+    padding: map-get($map: $estilos, $key: relleno);
     min-width: 50vh;
     height: 400px;
   }
@@ -412,7 +423,7 @@ body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-color: black;
     width: 700px;
-    padding: 10px;
+    padding: map-get($map: $estilos, $key: relleno);
     min-width: 50vh;
   }
 
@@ -437,7 +448,7 @@ body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-color: black;
     width: 700px;
-    padding: 10px;
+    padding: map-get($map: $estilos, $key: relleno);
     min-width: 50vh;
     margin-left: 50px;
   }

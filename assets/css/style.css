@@ -55,7 +55,7 @@ video {
   font-size: x-large;
   text-decoration: none;
   border-radius: 12px;
-  padding: 15px 0;
+  padding: 10px;
   margin-top: 10px;
   min-width: 100vh; }
 
@@ -66,7 +66,7 @@ video {
 .paginas {
   background-color: black;
   border: 30px;
-  padding: 15px;
+  padding: 10px;
   text-anchor: middle;
   font-size: 100%;
   color: black;
@@ -84,7 +84,7 @@ body {
 .footer__principal {
   background-color: black;
   border: 30px;
-  padding: 15px;
+  padding: 10px;
   text-anchor: middle;
   font-size: 100%;
   color: #fbff00;
@@ -130,15 +130,15 @@ body {
   min-width: 50vh; }
 
 .Pizza {
+  height: 250px;
+  width: 700px;
   display: flex;
   margin-top: 100px;
   border-radius: 10px;
   color: #fbff00;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: black;
-  min-width: 40vh;
-  width: 700px;
-  height: 250px; }
+  min-width: 40vh; }
 
 .sandwich {
   display: flex;
@@ -213,6 +213,8 @@ body {
     grid-template-rows: 1fr 1fr;
     min-height: 50vh; }
   .Pizza {
+    height: 150px;
+    width: 500px;
     display: flex;
     margin-top: 100px;
     border-radius: 10px;
@@ -220,8 +222,6 @@ body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-color: black;
     min-width: 40vh;
-    width: 500px;
-    height: 150px;
     font-size: small; }
   .cheff__principal {
     display: flex;
