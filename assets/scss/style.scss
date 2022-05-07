@@ -10,6 +10,10 @@
   padding: 0px;
 }
 
+.row {
+  width: 100%;
+}
+
 .imagen {
   background-image: $color-background;
   min-width: 100vh;
@@ -49,13 +53,7 @@ video {
   color: white;
 }
 
-.paginas {
-  text-align: map-get($map: $estilos, $key: alineacion);
-  font-size: x-large;
-  text-decoration: none;
-  display: inline-block;
-  min-width: 100vh;
-}
+
 .paginas :hover {
   color: rgba(194, 194, 152, 0.959);
   background-image: $color-background;
@@ -79,7 +77,6 @@ video {
   text-decoration: none;
   color: $color-letras-menu;
 }
-
 .paginas {
   background-color: rgb(0, 0, 0);
   border: 30px;
@@ -112,8 +109,25 @@ body {
   text-align: map-get($map: $estilos, $key: alineacion);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   min-width: 100vh;
+}
+
+.instagram {
+  margin-left: 10px;
+}
+.inicio{
+  align-items: center;
+  padding-left: 300px;
+  text-decoration: none;
+}
+.inicio :hover{
+  color: rgba(194, 194, 152, 0.959);
+  background-image: $color-background;
+  transform: scale(1.2);
+  padding: 0.4rem 0.5rem;
+  border-radius: 2rem;
+  transition: 250ms ease-in-out;
+  width: 100px
 }
 
 .empanada {
@@ -167,6 +181,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: black;
   min-width: 40vh;
+  margin-left: 100px;
 }
 
 .sandwich {
