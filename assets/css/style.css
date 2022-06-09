@@ -52,7 +52,6 @@ video {
   text-decoration: none;
   border-radius: 12px;
   padding: 10px;
-  margin-top: 10px;
   min-width: 100vh; }
 
 .headermenu a {
@@ -217,7 +216,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr; }
 
-@media (max-width: 1500px) and (min-width: 1300px) {
+@media (max-width: 1500px) and (min-width: 1200px) {
   body {
     background-size: auto; }
   .contenedor {
@@ -235,62 +234,9 @@ body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-color: black;
     min-width: 40vh;
-    font-size: small; }
-  .cheff__principal {
-    display: flex;
-    margin-top: 90px;
-    margin-bottom: 85px;
-    border-radius: 10px;
-    color: #fbff00;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: black;
-    width: 500px;
-    padding: 10px;
-    min-width: 50vh; }
-  .ubicacion {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    width: 500px; }
-  .menu-principal {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    width: 500px; }
-  .evaluador {
-    display: flex;
-    margin-top: 65px;
-    margin-bottom: 65px;
-    border-radius: 10px;
-    color: #fbff00;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: black;
-    width: 550px;
-    padding: 10px;
-    min-width: 50vh;
-    height: 400px; } }
+    font-size: small; } }
 
-@media (max-width: 1300px) and (min-width: 1000px) {
-  body {
-    background-size: auto; }
-  .contenedor {
-    display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 1fr 1fr;
-    min-height: 50vh; }
-  .Pizza {
-    display: flex;
-    margin-top: 100px;
-    border-radius: 10px;
-    color: #fbff00;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: black;
-    min-width: 40vh;
-    width: 450px;
-    height: 150px;
-    font-size: 15px; } }
-
-@media (max-width: 1000px) and (min-width: 300px) {
+@media (max-width: 1200px) and (min-width: 300px) {
   body {
     background-size: auto; }
   .contenedor {
@@ -311,7 +257,7 @@ body {
     font-size: 15px;
     margin-left: 15px; } }
 
-@media (max-width: 1500px) and (min-width: 1200px) {
+@media (max-width: 1500px) and (min-width: 1400px) {
   .cheff__principal {
     display: flex;
     margin-top: 90px;
@@ -344,6 +290,47 @@ body {
     padding: 10px;
     min-width: 50vh;
     height: 400px; } }
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .cheff__principal {
+    display: flex;
+    margin-top: 90px;
+    margin-bottom: 85px;
+    border-radius: 10px;
+    color: #fbff00;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: black;
+    width: 500px;
+    padding: 10px;
+    min-width: 50vh; }
+  .ubicacion {
+    display: grid;
+    align-items: center;
+    justify-content: center; }
+  .menu-principal {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 500px; }
+  .evaluador {
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    color: #fbff00;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: black;
+    width: 400px;
+    padding: 10px;
+    min-width: 50vh;
+    height: 400px; }
+  .row > * {
+    flex-shrink: 0;
+    width: 50%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y); } }
 
 @media (max-width: 1200px) and (min-width: 400px) {
   .contenedor-principal {
